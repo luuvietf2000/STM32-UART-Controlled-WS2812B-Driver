@@ -1,0 +1,14 @@
+../Core/Src/main.c:133:5:main	1
+../Core/Src/main.c:228:6:SystemClock_Config	3
+../Core/Src/main.c:267:13:MX_TIM2_Init	6
+../Core/Src/main.c:326:13:MX_USART2_UART_Init	2
+../Core/Src/main.c:357:13:MX_DMA_Init	1
+../Core/Src/main.c:381:13:MX_GPIO_Init	1
+../Core/Src/main.c:397:13:WB2812Config	1
+../Core/Src/main.c:405:6:CopyWb2812ImageByte	1
+../Core/Src/main.c:415:6:HandleMsgUart	3
+../Core/Src/main.c:443:6:Wb2812TranferCallback	1
+../Core/Src/main.c:466:6:UartReceiveCallback	1
+../Core/Src/main.c:487:6:UartSendCallback	1
+../Core/Src/main.c:508:6:UartHandleCallback	2
+../Core/Src/main.c:534:6:Error_Handler	1
