@@ -20,14 +20,14 @@ https://github.com/user-attachments/assets/f81766e0-daf1-4ad0-870b-7d6e16e53fca
 ## Firmware Architecture
 
 <p align="center">
-    <img src="include/Architecture/Firmware Architecture.drawio.svg" width="800"><br>
+    <img src="Include/Architecture/Firmware Architecture.svg" width="800"><br>
     <em>Fig 0. Firmware Architecture</em>
 </p>
 
 ## Data Flow
 
 <p align="center">
-    <img src="include/Dataflow/dataflow.drawio.svg" width="800"><br>
+    <img src="Include/Dataflow/dataflow.svg" width="800"><br>
     <em>Fig 1. Data Flow</em>
 </p>
 
@@ -37,13 +37,13 @@ https://github.com/user-attachments/assets/f81766e0-daf1-4ad0-870b-7d6e16e53fca
 
 ### STM32F103RCT6
 <p align="center">
-    <img src="include/image/Hardware/stm32f103rct6.jpg" width="400"><br>
+    <img src="Include/Image/Hardware/stm32f103rct6.jpg" width="400"><br>
     <em>Fig 2. STM32F103RCT6 KIT</em>
 </p>
 
 ### LEDS WB2812B
 <p align="center">
-    <img src="include/image/Hardware/led_wb2812.jpg" width="400"><br>
+    <img src="Include/Image/Hardware/led_wb2812.jpg" width="400"><br>
     <em>Fig 3. Leds WB2812 </em>
 </p>
 
@@ -73,7 +73,7 @@ This architecture minimizes CPU usage and enables reliable real-time communicati
 
 ## Message Format
 ### Get numble led controller
-- Request
+```Request
 |----------------------------------------------------------------------------|
 | Field          		| Size    | Description                              |
 |-----------------------|---------|------------------------------------------|
@@ -84,8 +84,8 @@ This architecture minimizes CPU usage and enables reliable real-time communicati
 | Length field   		| 4 Bytes | Number of bytes in the data field        |
 | Data field 	 		| 4 Bytes | Any byte								 |	
 |----------------------------------------------------------------------------|
-
-- Response  
+```
+```Response  
 |----------------------------------------------------------------------------|
 | Field          		| Size    | Description                              |
 |-----------------------|---------|------------------------------------------|
@@ -96,9 +96,10 @@ This architecture minimizes CPU usage and enables reliable real-time communicati
 | Length field   		| 4 Bytes | Number of bytes in the data field        |
 | Data field 	 		| 4 Bytes | Numble led control by Stm32				 |	
 |----------------------------------------------------------------------------|
+```
 
 ### Set Led 
-- Request
+```Request
 |----------------------------------------------------------------------------|
 | Field          		| Size    | Description                              |
 |-----------------------|---------|------------------------------------------|
@@ -109,8 +110,9 @@ This architecture minimizes CPU usage and enables reliable real-time communicati
 | Length field   		| 4 Bytes | Number of bytes in the data field        |
 | Data field 	 		| N Bytes | Led value								 |	
 |----------------------------------------------------------------------------|
+```
 
-- Response  
+```Response  
 |----------------------------------------------------------------------------|
 | Field          		| Size    | Description                              |
 |-----------------------|---------|------------------------------------------|
@@ -121,3 +123,4 @@ This architecture minimizes CPU usage and enables reliable real-time communicati
 | Length field   		| 4 Bytes | Number of bytes in the data field        |
 | Data field 	 		| 4 Bytes | Any byte								 |	
 |----------------------------------------------------------------------------|
+```
