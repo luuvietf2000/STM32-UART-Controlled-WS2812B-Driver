@@ -20,14 +20,14 @@ https://github.com/user-attachments/assets/f81766e0-daf1-4ad0-870b-7d6e16e53fca
 ## Firmware Architecture
 
 <p align="center">
-    <img src="Include/Architecture/Firmware Architecture.svg" width="800"><br>
+    <img src="Include/Image/Architecture/Firmware Architecture.svg" width="800"><br>
     <em>Fig 0. Firmware Architecture</em>
 </p>
 
 ## Data Flow
 
 <p align="center">
-    <img src="Include/Dataflow/dataflow.svg" width="800"><br>
+    <img src="Include/Image/Dataflow/dataflow.svg" width="800"><br>
     <em>Fig 1. Data Flow</em>
 </p>
 
